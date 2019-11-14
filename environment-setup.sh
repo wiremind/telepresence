@@ -49,6 +49,9 @@ python3 --version
 ruby --version || true
 docker version || true
 
+sudo edgectl daemon
+edgectl version || true
+
 # Make sure gcloud is installed.  This includes kubectl.
 ./ci/setup-gcloud.sh "${PROJECT_NAME}" "${CLUSTER_NAME}" "${CLOUDSDK_COMPUTE_ZONE}" "${OS}"
 
