@@ -52,8 +52,8 @@ USER 1000:0
 #
 # The privileged (running-as-root) image
 #
-FROM common as telepresence-k8s-priv
-
-# Set up to run as root
-RUN cp /usr/src/app/run-priv.sh /usr/src/app/run.sh && \
-    echo "telepresence::0:0:Telepresence User:/usr/src/app:/bin/ash" >> /etc/passwd
+#FROM common as telepresence-k8s-priv
+#
+## Set up to run as root
+#RUN cp /usr/src/app/run-priv.sh /usr/src/app/run.sh && \
+#    echo "telepresence::0:0:Telepresence User:/usr/src/app:/bin/ash" >> /etc/passwd
